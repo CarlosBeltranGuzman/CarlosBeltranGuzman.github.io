@@ -99,7 +99,7 @@ body{
 
 .nav{
     --padding-container:0;
-    height: 65%;
+    /* height: 65%; */
     display: flex;
     align-items: center;
 }
@@ -155,7 +155,7 @@ nav.nav.container{
 }
 
 .nav-logo{
-    width: 10%;
+    width: 20%;
     padding-right: 5px;
 }
 .nav-close{
