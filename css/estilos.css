@@ -6,6 +6,10 @@
     --color-title: #001a49;
 }
 
+input{
+    display: none;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -17,6 +21,15 @@ body{
     overflow: hidden;
     /* background-color: #fff; */
     padding: var(--padding-container);
+}
+
+.containerdos{
+    /* width: 90%; */
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: #fff; */
+    /* padding: var(--padding-container); */
 }
 /*Inicio*/
 .hero{
@@ -38,22 +51,21 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../images/Tuberia1.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo1.jpg);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
 /*Quienes Somos*/
 .herouno{
-    width: 100% ;
-    height: 100vh;
+    width: 100%;
+    height: 10vh;
     min-height: 600px;
     max-height: 800px;
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
     color: white;
-
 }
 
 .herouno::before{
@@ -63,7 +75,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../images/Tuberia2.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo3.jpg);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -71,7 +83,7 @@ body{
 
 /*Contacto*/
 .herodos{
-    width: 100% ;
+    width: 100%;
     height: 100vh;
     min-height: 600px;
     max-height: 800px;
@@ -79,7 +91,6 @@ body{
     display: grid;
     grid-template-rows: 100px 1fr;
     color: white;
-
 }
 
 .herodos::before{
@@ -89,7 +100,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../images/Contactanos.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo2.jpg);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -99,7 +110,7 @@ body{
 
 .nav{
     --padding-container:0;
-    /* height: 65%; */
+    height: 65%;
     display: flex;
     align-items: center;
 }
@@ -111,7 +122,7 @@ nav.nav.container{
     padding-right: 20px;
 }
 .nav-title{
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .nav-itemp{
@@ -136,6 +147,7 @@ nav.nav.container{
     margin-right: 20px;
     padding: 15px 5px;
     border-radius: 20px;
+    
 }
 
 .nav-links:hover{
@@ -155,7 +167,7 @@ nav.nav.container{
 }
 
 .nav-logo{
-    width: 20%;
+    width: 12%;
     padding-right: 5px;
 }
 .nav-close{
@@ -261,7 +273,7 @@ nav.nav.container{
     }
     .slider-img img{
         margin-right: 0px;
-        width: 300px;
+        width: 200px;
     }
 
     .swiper-horizontal >.swiper-pagination-bullets,
@@ -327,6 +339,14 @@ nav.nav.container{
     .hero-title{
         font-size: 2rem;
     }
+    .nav-title{
+        font-size: 100%;
+    }
+    .nav-logo{
+        width: 38%;
+    }
+
+    
 }
 
 .about{
@@ -346,12 +366,20 @@ nav.nav.container{
 .questions{
     text-align: center;
 }
+.questionsdos{
+    text-align: center;
+    background-color: darkgrey;
+    border-radius: 20px;
+}
 
 .questions__container{
     display: grid;
     gap: 2em;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .questions__padding{
@@ -451,7 +479,7 @@ nav.nav.container{
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 50% 50%;
 }
 
 .testimony__texts{
@@ -487,4 +515,151 @@ nav.nav.container{
         justify-content: space-around;
     }
     
+}
+
+div.galeria{
+    margin: 20px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 350px;
+    height: 460px;
+    
+}
+
+div.galeria img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+div.pie{
+    text-align: center;
+    padding: 10px;
+}
+
+/**pagina de galeria de fotos**/
+
+.top-content{
+    background-color: lightgray;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+h4{
+    height: 100%;
+    background-color: deepskyblue;
+    line-height: 60px;
+    padding: 0 50px;
+    color: #fff;
+}
+
+label{
+    display: inline-block;
+    height: 100%;
+    /* padding: 0 5px; */
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: .5s;
+}
+
+label:hover{
+    color: #001a49;
+
+}
+
+.photo-gallery{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-flow: wrap;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;*/
+}
+
+.pic{
+    position: relative;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pic.galeria{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+#check1:checked ~ .containerdos .photo-gallery .album1{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check1:checked ~ .containerdos .photo-gallery .album2{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+#check2:checked ~ .containerdos .photo-gallery .album2{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .containerdos .photo-gallery .album1{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+/*Enlaces de Interes*/
+.afooter{
+    background-color: #2e60bd;
+}
+.footer__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__title, .footer__newsletter{
+    color: #e6dcdc;
+}
+
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav--footer{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.nav__link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
 }
