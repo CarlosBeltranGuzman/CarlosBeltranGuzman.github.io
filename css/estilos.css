@@ -346,7 +346,10 @@ nav.nav.container{
         width: 38%;
     }
 
-    
+    .questions__container img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 .about{
@@ -378,9 +381,11 @@ nav.nav.container{
     padding-top: 50px;
     padding-bottom: 0px;
     text-align: left;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+
 
 .questions__padding{
     padding: 0;
