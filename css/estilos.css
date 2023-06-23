@@ -51,7 +51,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo1.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/iglesia_morroa.jpg);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -81,7 +81,7 @@ body{
     z-index: -1;
 }
 
-/*Contacto*/
+/*Documentacion*/
 .herodos{
     width: 100%;
     height: 100vh;
@@ -100,7 +100,57 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo2.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fuente2.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+/*Noticias*/
+.herotres{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: white;
+}
+
+.herotres::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fuente1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+/*Abastecimiento*/
+.herocuatro{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: white;
+}
+
+.herocuatro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../recursosAguasMorroa/images/fotografiasaguasdemorroasaesp/fondo1.jpg);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -110,7 +160,7 @@ body{
 
 .nav{
     --padding-container:0;
-    height: 65%;
+    height: 70%;
     display: flex;
     align-items: center;
 }
@@ -135,6 +185,13 @@ nav.nav.container{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
+    /* gap: 2em; */
+    font-size: small;
+}
+
+.nav-linkf{
+    margin-left: auto;
+    padding: 0;
     gap: 2em;
 }
 
@@ -147,7 +204,6 @@ nav.nav.container{
     margin-right: 20px;
     padding: 15px 5px;
     border-radius: 20px;
-    
 }
 
 .nav-links:hover{
@@ -167,7 +223,7 @@ nav.nav.container{
 }
 
 .nav-logo{
-    width: 12%;
+    width: 15%;
     padding-right: 5px;
 }
 .nav-close{
@@ -334,6 +390,11 @@ nav.nav.container{
         right: 30px;
         width: 30px;
         cursor: pointer;
+    }
+    .nav__link--footer{
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
     }
 
     .hero-title{
