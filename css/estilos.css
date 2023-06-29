@@ -189,6 +189,7 @@ nav.nav.container{
     font-size: small;
 }
 
+/*footer links //Enlaces de interes*/
 .nav-linkf{
     margin-left: auto;
     padding: 0;
@@ -228,6 +229,33 @@ nav.nav.container{
 }
 .nav-close{
     display: var(--show, none);
+}
+
+
+/*Menu desplegable*/
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+    padding-left: 0px
+}
+
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+}
+
+.nav-link--menu li:hover .menu-vertical{
+	display: block;
 }
 
 /* HERO CONTAINER*/
